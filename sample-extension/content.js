@@ -28,6 +28,15 @@ chrome.extension.onMessage.addListener(function (message, sender, sendResponse) 
 					// divs[i].style.setProperty("width", "1000px", "important");
 				}
 			}
+
+			var temp = document.querySelectorAll("img.portrait,img.landscape");
+			if (temp.length === 0) {
+				console.log("There are no any divs in the page.");
+			} else {
+				for (var i = 0; i < temp.length; i++) {
+					temp[i].style.width = "200px";
+				}
+			}
 			break;
 	}
 });
