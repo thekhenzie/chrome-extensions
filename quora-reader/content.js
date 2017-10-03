@@ -43,23 +43,17 @@ chrome.extension.onMessage.addListener(function (message, sender, sendResponse) 
 				console.log("There are no any spans in the page.");
 			} else {
 				for (var i = 0; i < spans.length; i++) {
-					spans[i].style.fontSize = "x-small";
+					spans[i].style.fontSize = "medium";
 					spans[i].style.fontStyle = "normal";
 				}
 			}
-			var footerDiv = document.querySelectorAll('div.Answer ActionBar');
-			if (footerDiv.length === 0) {
-			} else {
-				for (var i = 0; i < footerDiv.length; i++) {
-					footerDiv[i].style.display = "none";
-				}
+			var footerDiv = document.querySelectorAll('div.action_bar_inner, div.u-flex');
+			for (var i = 0; i < footerDiv.length; i++) {
+				footerDiv[i].style.display = "none";
 			}
-			var author = document.querySelectorAll('div.answer_user answer_user_inline');
-			if (author.length === 0) {
-			} else {
-				for (var i = 0; i < author.length; i++) {
-					author[i].style.display = "none";
-				}
+			var author = document.querySelectorAll('div.answer_user, div.answer_user_inline');
+			for (var i = 0; i < author.length; i++) {
+				author[i].style.display = "none";
 			}
 			break;
 	}
