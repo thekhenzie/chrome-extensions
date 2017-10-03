@@ -8,6 +8,9 @@
     "48": "icons/48x48.png",
     "128": "icons/128x128.png"
   },
+  "omnibox": {
+    "keyword": "quora"
+  },
   "browser_action": {
     "default_icon": {
       "19": "icons/19x19.png",
@@ -17,10 +20,13 @@
     "default_popup": "browseraction/popup.html"
   },
   "background": {
-    "persistent": false,
     "scripts": [
       "background.js"
-    ]
+    ],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab/newtab.html"
   },
   "content_scripts": [
     {
@@ -33,4 +39,6 @@
       ]
     }
   ]
+  // ,
+  // "devtools_page": "devtools/devtools.html"
 }
