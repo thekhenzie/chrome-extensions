@@ -15,7 +15,6 @@ chrome.extension.onMessage.addListener(function (message, sender, sendResponse) 
 				console.log("There are no any divs in the page.");
 			} else {
 				for (var i = 0; i < divs.length; i++) {
-					// divs[i].style.setProperty("width", "1000px", "important");
 				}
 			}
 
@@ -25,7 +24,6 @@ chrome.extension.onMessage.addListener(function (message, sender, sendResponse) 
 			} else {
 				for (var i = 0; i < divs.length; i++) {
 					divs[i].style.marginLeft = "0px";
-					// divs[i].style.setProperty("width", "1000px", "important");
 				}
 			}
 
