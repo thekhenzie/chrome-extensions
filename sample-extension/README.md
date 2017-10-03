@@ -1,4 +1,3 @@
-## Developing Google Chrome Extensions Source Code
+## Quora Reader
 
-Here's the source code for the Nettuts+ article on Developing Google Chrome 
-Extensions, written by Krasimir Tsonev.
+Removed header of Quora website and minimalize the webpage itself
