@@ -32,7 +32,7 @@ chrome.extension.onMessage.addListener(function (message, sender, sendResponse) 
 				
 			} else {
 				for (var i = 0; i < temp.length; i++) {
-					temp[i].style.width = "200px";
+					temp[i].style.width = "30px";
 				}
 			}
 
